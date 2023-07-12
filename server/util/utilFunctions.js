@@ -56,6 +56,17 @@ class Utils {
     //   return Math.floor(Math.random() * 900000) + 100000
     // }
   }
+
+  static async paginator(Model, options, page, limit) {
+    const data = await Model.paginate(options)
+    return {
+      docs: data.docs,
+      totalDocs: data.total,
+      totalPages: Math.ceil(data.total / _.toInteger(limit)),
+      page,
+      limit
+    }
+  }
 }
 
 module.exports = Utils

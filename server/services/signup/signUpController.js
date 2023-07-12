@@ -3,7 +3,6 @@ const Utils = require("../../util/utilFunctions")
 
 class SignUpController {
   static async signUp(req, res) {
-    console.log("signUp ~ res:", res.__)
     try {
       req.body.userType = CONSTANTS.ROLE.USER
       const data = await SignUpService.signUp(req, res.__)

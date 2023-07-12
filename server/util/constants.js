@@ -46,5 +46,14 @@ module.exports = {
   ROLE: {
     USER: 1,
     ADMIN: 4
+  },
+  INGREDIENT_TYPE: {
+    TYPE: ["Alcohol", "Base", "Accessory", "Glass", "Ingredient", "Ice"],
+    ALCOHOL: "Alcohol",
+    BASE: "Base",
+    ACCESSORY: "Accessory",
+    GLASS: "Glass",
+    INGREDIENT: "Ingredient",
+    ICE: "Ice"
   }
 }

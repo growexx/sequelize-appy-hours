@@ -1,5 +1,7 @@
+const sequelizePaginate = require("sequelize-paginate")
+
 module.exports = function (sequelize, DataTypes) {
-  return sequelize.define("user", {
+  const userModel = sequelize.define("user", {
     id: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV1,
@@ -50,4 +52,6 @@ module.exports = function (sequelize, DataTypes) {
       default: Date.now
     }
   })
+  sequelizePaginate.paginate(userModel)
+  return userModel
 }

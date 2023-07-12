@@ -3,6 +3,7 @@ const express = require("express")
 const cookieParser = require("cookie-parser")
 const app = express()
 const authRoutes = require("./routes/authRoutes")
+const ingredientRoutes = require("./routes/ingredientRoutes")
 // const userRoutes = require('./routes/userRoutes');
 const bodyParser = require("body-parser")
 // const swaggerUi = require('swagger-ui-express');
@@ -43,7 +44,7 @@ i18n.configure({
 
 app.use(compression())
 // app.use(helmet());
-app.use(i18n.init);
+app.use(i18n.init)
 app.use(cookieParser())
 
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }))
@@ -69,6 +70,7 @@ app.get("/", (req, res) => {
   })
 })
 app.use("/auth", authRoutes)
+app.use("/ingredient", ingredientRoutes)
 // app.use('/user', userRoutes);
 
 // const spec = swaggerDoc(swaggerDef);
