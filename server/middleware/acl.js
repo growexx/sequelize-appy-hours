@@ -8,7 +8,10 @@ module.exports = function (req, res, next) {
       { method: "PUT", path: "/user/picture" },
       { method: "DELETE", path: "/user/picture" },
       { method: "PUT", path: "/user/password" },
-      { method: "GET", path: "/ingredient" }
+      { method: "GET", path: "/ingredient" },
+      { method: "POST", path: "/ingredient" },
+      { method: 'GET', path: '/ingredient/details' },
+      { method: 'PATCH', path: '/ingredient/change-status' }
     ],
     4: [
       { method: "GET", path: "/user/details" },

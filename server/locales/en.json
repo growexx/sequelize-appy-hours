@@ -29,5 +29,6 @@
   "FORGOT_PASSWORD_LINK_SENT_SUCCESS": "An email has been sent. Please follow instructions on it.",
   "LINK_IS_VALID": "Link is not valid.",
   "RESET_PASSWORD_SUCCESS": "Your password has been reset successfully.",
-  "INGREDIENT_ADD_SUCCESS": "Ingredient added successfully."
+  "INGREDIENT_ADD_SUCCESS": "Ingredient added successfully.",
+  "INGREDIENT_EDIT_SUCCESS": "Ingredient updated successfully."
 }
