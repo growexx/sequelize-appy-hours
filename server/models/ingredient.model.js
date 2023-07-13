@@ -14,7 +14,7 @@ module.exports = function (sequelize, DataTypes) {
         type: DataTypes.STRING
       },
       ingredient_img: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
       },
       ingredient_type: {
         type: DataTypes.STRING,

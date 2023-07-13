@@ -22,7 +22,8 @@ module.exports = {
     FULL_ACCESS: /^[^<> ?//\\]+$/,
     ALPHA_NUMARIC: /^[\w@ ]+$/,
     URL: /(http(s)?:\/\/www\.)?[-a-zA-Z0-9@:%.+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%+.~#?&//=]*)/,
-    PHONE: /^(\+\d{1,3}[- ]?)?\d{10}$/
+    PHONE: /^(\+\d{1,3}[- ]?)?\d{10}$/,
+    UUID: /^[0-9A-F]{8}-[0-9A-F]{4}-[4][0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i,
   },
   SALT_ROUNDS: 10,
   OTPLENGTH: 6,
@@ -55,5 +56,11 @@ module.exports = {
     GLASS: "Glass",
     INGREDIENT: "Ingredient",
     ICE: "Ice"
-  }
+  },
+  UPLOAD_PICTURE: {
+    MIN_SIZE: 5120,
+    MAX_SIZE: 2097152,
+    ALLOWED_TYPE: ['image/jpg', 'image/jpeg', 'image/png']
+  },
+  CATEGORY: ['Cocktails', 'Liquor', 'Food', 'Beer', 'Wine', 'Garnish', 'Ice', 'Accessories', 'Glasses', 'Drinking Games'],
 }
