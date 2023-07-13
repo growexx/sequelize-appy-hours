@@ -11,7 +11,8 @@ module.exports = function (req, res, next) {
       { method: "GET", path: "/ingredient" },
       { method: "POST", path: "/ingredient" },
       { method: 'GET', path: '/ingredient/details' },
-      { method: 'PATCH', path: '/ingredient/change-status' }
+      { method: 'PATCH', path: '/ingredient/change-status' },
+      { method: 'POST', path: '/ingredient/update' }
     ],
     4: [
       { method: "GET", path: "/user/details" },
