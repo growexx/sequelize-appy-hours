@@ -4,6 +4,7 @@ const cookieParser = require("cookie-parser")
 const app = express()
 const authRoutes = require("./routes/authRoutes")
 const ingredientRoutes = require("./routes/ingredientRoutes")
+const ingredientItemRoutes = require("./routes/ingredientItemRoutes")
 // const userRoutes = require('./routes/userRoutes');
 const bodyParser = require("body-parser")
 // const swaggerUi = require('swagger-ui-express');
@@ -71,6 +72,7 @@ app.get("/", (req, res) => {
 })
 app.use("/auth", authRoutes)
 app.use("/ingredient", ingredientRoutes)
+app.use("/ingredient-item", ingredientItemRoutes)
 // app.use('/user', userRoutes);
 
 // const spec = swaggerDoc(swaggerDef);
