@@ -31,5 +31,6 @@
   "RESET_PASSWORD_SUCCESS": "Your password has been reset successfully.",
   "INGREDIENT_ADD_SUCCESS": "Ingredient added successfully.",
   "INGREDIENT_EDIT_SUCCESS": "Ingredient updated successfully.",
-  "INGREDIENT_NOT_FOUND": "Ingredient not found."
+  "INGREDIENT_NOT_FOUND": "Ingredient not found.",
+  "INGREDIENT_ITEM_ADD_SUCCESS": "Ingredient item added successfully."
 }
